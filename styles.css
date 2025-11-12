@@ -802,66 +802,103 @@ body {
 }
 
 /* ============================================
-   MEDIA QUERIES PARA IMPRESIÓN
+   MEDIA QUERIES PARA IMPRESIÓN (ACTUALIZADO)
    ============================================ */
 @media print {
-    body {
-        background-color: white;
-        padding: 0;
-        margin: 0;
-    }
 
-    .triptico-container {
-        width: 3300px;
-        height: 2550px;
-        box-shadow: none;
-        gap: 0;
-    }
-
-    .panel {
-        width: 1100px;
-        height: 2550px;
-        page-break-inside: avoid;
-    }
-
-    .panel-back-left,
-    .panel-back-center,
-    .panel-back-right {
-        display: none;
-    }
-
+    /* Paso 1: Definir el tamaño de página (Esto ya lo tenías bien) */
     @page {
         size: 3300px 2550px;
         margin: 0;
     }
 
-    .brillante {
-        animation: none;
-    }
-
-    .panel-center {
+    /* Paso 2: Resetear el body y forzar la impresión de colores/fondos */
+    body {
+        background-color: white;
+        padding: 0;
+        margin: 0;
+        /* ¡CLAVE! Fuerza la impresión de todos tus fondos y colores */
         -webkit-print-color-adjust: exact;
         print-color-adjust: exact;
     }
+
+    /* Paso 3: El "TRUCO" de visibilidad. Oculta TODO por defecto */
+    body * {
+        visibility: hidden;
+    }
+
+    /* Paso 4: Muestra SÓLO el contenedor del tríptico y sus hijos */
+    .triptico-container, .triptico-container * {
+        visibility: visible;
+    }
+
+    /* Paso 5: Vuelve a colocar el contenedor en la esquina (¡Importante!) */
+    .triptico-container {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 3300px; /* Ancho explícito */
+        height: 2550px; /* Alto explícito */
+        
+        /* Asegura que el grid se mantenga en impresión */
+        display: grid; 
+        grid-template-columns: repeat(3, 1100px);
+        gap: 0;
+        
+        box-shadow: none; /* Quita sombras de impresión */
+    }
+    
+    /* Paso 6: Asegura que los paneles se comporten */
+    .panel {
+        width: 1100px;
+        height: 2550px;
+        page-break-inside: avoid; /* Correcto, ya lo tenías */
+        overflow: hidden; /* Evita desbordes */
+    }
+
+    /* Paso 7: Oculta los paneles del REVERSO al imprimir el FRENTE */
+    .panel-back-left,
+    .panel-back-center,
+    .panel-back-right {
+        display: none !important; /* Usamos !important para asegurar */
+    }
+
+    /* Paso 8: Quita animaciones y transiciones que molestan en PDF */
+    .brillante {
+        animation: none;
+    }
+    
+    .beneficio-compact:hover,
+    .imagen-destacada:hover,
+    .imagen-destacada-right:hover,
+    .imagen-servicios:hover,
+    .logo:hover,
+    .experiencia-badge:hover,
+    .paso-visual:hover,
+    .servicio-item:hover,
+    .stat-item:hover,
+    .caracteristica:hover {
+        transform: none; /* Quita efectos de hover */
+        box-shadow: none; /* Quita cambios de sombra */
+    }
 }
 
-/* Para imprimir el reverso */
+/* Lógica para imprimir el REVERSO (La dejamos intacta, está perfecta) */
 @media print {
     body.print-back .panel-left,
     body.print-back .panel-center,
     body.print-back .panel-right {
-        display: none;
+        display: none !important; /* Oculta el frente */
     }
 
     body.print-back .panel-back-left,
     body.print-back .panel-back-center,
     body.print-back .panel-back-right {
-        display: block;
+        display: block !important; /* Muestra el reverso */
         width: 1100px;
         height: 2550px;
     }
 }
-
 /* ============================================
    RESPONSIVE DESIGN
    ============================================ */
