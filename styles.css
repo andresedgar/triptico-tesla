@@ -44,10 +44,11 @@ body {
 }
 
 .panel-content {
-    padding: 60px;
+    padding: 80px 60px;
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 /* ============================================
@@ -58,14 +59,14 @@ body {
 }
 
 .titulo-seccion {
-    font-size: 64px;
+    font-size: 80px;
     font-weight: 800;
     color: var(--azul-oscuro);
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     line-height: 1.2;
     text-transform: uppercase;
-    border-bottom: 8px solid var(--azul-claro);
-    padding-bottom: 20px;
+    border-bottom: 10px solid var(--azul-claro);
+    padding-bottom: 30px;
 }
 
 /* Imágenes Destacadas */
@@ -74,10 +75,10 @@ body {
 .imagen-servicios {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 500px;
     border-radius: 30px;
     overflow: hidden;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     box-shadow: 0 16px 50px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
 }
@@ -110,7 +111,7 @@ body {
 
 .texto-overlay {
     color: white;
-    font-size: 28px;
+    font-size: 36px;
     font-weight: 700;
     margin: 0;
     text-align: center;
@@ -121,13 +122,13 @@ body {
 .beneficios-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-    margin-bottom: 30px;
+    gap: 30px;
+    margin-bottom: 50px;
 }
 
 .beneficio-compact {
     background: rgba(255, 255, 255, 0.95);
-    padding: 24px;
+    padding: 35px 28px;
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 6px 20px rgba(27, 58, 125, 0.1);
@@ -141,27 +142,27 @@ body {
 }
 
 .beneficio-compact .icono {
-    font-size: 56px;
+    font-size: 70px;
     display: block;
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .beneficio-compact h3 {
-    font-size: 26px;
+    font-size: 32px;
     font-weight: 700;
     color: var(--azul-oscuro);
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .beneficio-compact p {
-    font-size: 20px;
+    font-size: 26px;
     color: var(--gris-texto);
-    line-height: 1.3;
+    line-height: 1.4;
 }
 
 .deduccion-box {
     background: linear-gradient(135deg, var(--amarillo-acento), #FFE17B);
-    padding: 30px;
+    padding: 45px 35px;
     border-radius: 24px;
     text-align: center;
     color: var(--azul-oscuro);
@@ -169,13 +170,13 @@ body {
 }
 
 .deduccion-box strong {
-    font-size: 28px;
+    font-size: 36px;
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .deduccion-box p {
-    font-size: 24px;
+    font-size: 30px;
     margin: 0;
 }
 
@@ -229,14 +230,14 @@ body {
     width: 100%;
     display: flex;
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .logo {
-    width: 400px;
+    width: 480px;
     height: auto;
     background: rgba(255, 255, 255, 0.98);
-    padding: 30px;
+    padding: 40px;
     border-radius: 30px;
     box-shadow: 0 16px 64px rgba(0, 0, 0, 0.4),
                 0 0 0 2px rgba(255, 255, 255, 0.5);
@@ -249,14 +250,14 @@ body {
 }
 
 .titulo-principal {
-    margin: 40px 0;
+    margin: 60px 0;
 }
 
 .titulo-principal h1 {
-    font-size: 72px;
+    font-size: 90px;
     font-weight: 700;
     line-height: 1.2;
-    margin: 10px 0;
+    margin: 15px 0;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -268,11 +269,11 @@ body {
 }
 
 .tu-futuro {
-    font-size: 64px;
+    font-size: 80px;
 }
 
 .brillante {
-    font-size: 96px;
+    font-size: 120px;
     font-weight: 900;
     color: var(--amarillo-acento);
     text-shadow: 0 0 60px rgba(244, 209, 96, 0.6),
@@ -295,10 +296,10 @@ body {
 }
 
 .slogan {
-    font-size: 32px;
+    font-size: 40px;
     font-style: italic;
-    margin: 30px 0;
-    padding: 24px 50px;
+    margin: 50px 0;
+    padding: 35px 60px;
     background: rgba(255, 255, 255, 0.15);
     border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 50px;
@@ -310,10 +311,10 @@ body {
 .experiencia-badge {
     background: linear-gradient(135deg, var(--amarillo-acento) 0%, #FFE17B 100%);
     color: var(--azul-oscuro);
-    padding: 30px 60px;
+    padding: 45px 75px;
     border-radius: 100px;
     display: inline-block;
-    margin: 40px auto 0;
+    margin: 60px auto 0;
     box-shadow: 0 16px 50px rgba(244, 209, 96, 0.6),
                 0 0 0 2px rgba(255, 255, 255, 0.5),
                 inset 0 2px 0 rgba(255, 255, 255, 0.5);
@@ -330,17 +331,17 @@ body {
 .badge-content {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
 }
 
 .badge-numero {
-    font-size: 96px;
+    font-size: 120px;
     font-weight: 900;
     line-height: 1;
 }
 
 .badge-texto {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
     line-height: 1.2;
     text-align: left;
@@ -352,38 +353,38 @@ body {
     backdrop-filter: blur(30px);
     border: 4px solid rgba(255, 255, 255, 0.3);
     border-radius: 30px;
-    padding: 30px 40px;
-    margin-top: 40px;
+    padding: 45px 50px;
+    margin-top: 60px;
     text-align: center;
     box-shadow: 0 16px 50px rgba(0, 0, 0, 0.2),
                 inset 0 2px 0 rgba(255, 255, 255, 0.2);
 }
 
 .cert-titulo {
-    font-size: 28px;
+    font-size: 36px;
     font-weight: 700;
     color: var(--amarillo-acento);
-    margin: 0 0 16px 0;
+    margin: 0 0 20px 0;
     text-transform: uppercase;
     letter-spacing: 2px;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .cert-numeros {
-    font-size: 32px;
+    font-size: 42px;
     font-weight: 800;
     color: white;
-    margin: 0 0 12px 0;
+    margin: 0 0 18px 0;
     letter-spacing: 1px;
     text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .cert-descripcion {
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 600;
     color: rgba(255, 255, 255, 0.95);
     margin: 0;
-    line-height: 1.3;
+    line-height: 1.4;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3);
 }
 
@@ -395,26 +396,26 @@ body {
 }
 
 .titulo-seccion-como {
-    font-size: 56px;
+    font-size: 72px;
     font-weight: 800;
     color: var(--azul-oscuro);
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     text-align: center;
     text-transform: uppercase;
-    border-bottom: 8px solid var(--azul-claro);
-    padding-bottom: 20px;
+    border-bottom: 10px solid var(--azul-claro);
+    padding-bottom: 30px;
 }
 
 .pasos-visuales {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
-    margin-bottom: 40px;
+    gap: 35px;
+    margin-bottom: 60px;
 }
 
 .paso-visual {
     background: rgba(255, 255, 255, 0.95);
-    padding: 24px;
+    padding: 40px 30px;
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 6px 20px rgba(27, 58, 125, 0.1);
@@ -428,45 +429,45 @@ body {
 }
 
 .paso-numero {
-    width: 70px;
-    height: 70px;
+    width: 90px;
+    height: 90px;
     background: linear-gradient(135deg, var(--azul-oscuro), var(--azul-medio));
     color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 800;
-    margin: 0 auto 20px;
+    margin: 0 auto 25px;
     box-shadow: 0 6px 20px rgba(27, 58, 125, 0.3);
 }
 
 .paso-visual h3 {
-    font-size: 26px;
+    font-size: 34px;
     font-weight: 700;
     color: var(--azul-oscuro);
-    margin-bottom: 12px;
+    margin-bottom: 16px;
 }
 
 .paso-visual p {
-    font-size: 20px;
+    font-size: 26px;
     color: var(--gris-texto);
-    line-height: 1.3;
+    line-height: 1.4;
 }
 
 .info-rapida {
     background: rgba(255, 255, 255, 0.95);
-    padding: 30px;
+    padding: 40px;
     border-radius: 20px;
     box-shadow: 0 6px 20px rgba(27, 58, 125, 0.1);
 }
 
 .info-rapida p {
-    font-size: 24px;
+    font-size: 30px;
     color: var(--gris-texto);
-    margin-bottom: 16px;
-    line-height: 1.4;
+    margin-bottom: 20px;
+    line-height: 1.5;
 }
 
 .info-rapida p:last-child {
@@ -483,16 +484,16 @@ body {
 .servicios-compacto {
     display: flex;
     flex-direction: column;
-    gap: 24px;
-    margin-bottom: 40px;
+    gap: 35px;
+    margin-bottom: 60px;
 }
 
 .servicio-item {
     display: flex;
-    gap: 24px;
+    gap: 30px;
     align-items: center;
     background: rgba(255, 255, 255, 0.95);
-    padding: 24px;
+    padding: 35px 30px;
     border-radius: 20px;
     box-shadow: 0 6px 20px rgba(27, 58, 125, 0.1);
     border: 2px solid rgba(107, 164, 209, 0.3);
@@ -505,51 +506,51 @@ body {
 }
 
 .icono-servicio {
-    font-size: 64px;
+    font-size: 80px;
     flex-shrink: 0;
 }
 
 .servicio-item h3 {
-    font-size: 26px;
+    font-size: 34px;
     font-weight: 700;
     color: var(--azul-oscuro);
-    margin-bottom: 8px;
+    margin-bottom: 12px;
 }
 
 .servicio-item p {
-    font-size: 20px;
+    font-size: 26px;
     color: var(--gris-texto);
-    line-height: 1.3;
+    line-height: 1.4;
     margin: 0;
 }
 
 .valores-section {
     background: linear-gradient(135deg, var(--azul-oscuro), var(--azul-medio));
-    padding: 30px;
+    padding: 45px 40px;
     border-radius: 20px;
     color: white;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .valores-section h3 {
-    font-size: 32px;
+    font-size: 42px;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
 .valores-grid {
     display: flex;
     flex-wrap: wrap;
-    gap: 16px;
+    gap: 20px;
     justify-content: center;
 }
 
 .valor {
     background: rgba(255, 255, 255, 0.2);
-    padding: 12px 28px;
+    padding: 18px 36px;
     border-radius: 40px;
-    font-size: 22px;
+    font-size: 28px;
     font-weight: 600;
 }
 
@@ -565,28 +566,28 @@ body {
 }
 
 .titulo-contacto {
-    font-size: 64px;
+    font-size: 80px;
     font-weight: 800;
     color: white;
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
     text-transform: uppercase;
 }
 
 .contacto-info {
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
-    padding: 40px;
+    padding: 60px 50px;
     border-radius: 30px;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
 }
 
 .info-item {
     display: flex;
-    gap: 30px;
+    gap: 40px;
     align-items: flex-start;
-    margin-bottom: 36px;
-    padding-bottom: 30px;
+    margin-bottom: 50px;
+    padding-bottom: 40px;
     border-bottom: 2px solid rgba(255, 255, 255, 0.2);
 }
 
@@ -599,14 +600,14 @@ body {
 .info-item svg {
     flex-shrink: 0;
     stroke: var(--amarillo-acento);
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     stroke-width: 2;
 }
 
 .info-item p {
-    font-size: 26px;
-    line-height: 1.5;
+    font-size: 32px;
+    line-height: 1.6;
 }
 
 .info-item strong {
@@ -616,38 +617,38 @@ body {
 .mision-vision {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
 }
 
 .mv-item {
     background: rgba(255, 255, 255, 0.95);
-    padding: 30px;
+    padding: 45px 40px;
     border-radius: 20px;
     color: var(--gris-texto);
 }
 
 .mv-item h3 {
-    font-size: 32px;
+    font-size: 42px;
     font-weight: 800;
     color: var(--azul-oscuro);
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .mv-item p {
-    font-size: 22px;
-    line-height: 1.4;
+    font-size: 28px;
+    line-height: 1.5;
 }
 
 .logo-footer {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
 .logo-small {
-    width: 240px;
+    width: 280px;
     height: auto;
     background: white;
-    padding: 20px;
+    padding: 25px;
     border-radius: 20px;
 }
 
@@ -661,23 +662,23 @@ body {
 .quien-somos-visual {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 55px;
 }
 
 .badge-experiencia-grande {
     background: linear-gradient(135deg, var(--azul-oscuro), var(--azul-medio));
     color: white;
-    padding: 40px;
+    padding: 55px 50px;
     border-radius: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 40px;
+    gap: 50px;
     box-shadow: 0 16px 50px rgba(27, 58, 125, 0.3);
 }
 
 .numero-grande {
-    font-size: 144px;
+    font-size: 180px;
     font-weight: 900;
     line-height: 1;
     color: var(--amarillo-acento);
@@ -685,14 +686,14 @@ body {
 }
 
 .texto-badge {
-    font-size: 32px;
+    font-size: 42px;
     font-weight: 700;
     line-height: 1.2;
     text-align: left;
 }
 
 .intro-text {
-    font-size: 28px;
+    font-size: 36px;
     color: var(--azul-oscuro);
     line-height: 1.6;
     font-weight: 600;
@@ -702,12 +703,12 @@ body {
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 40px;
 }
 
 .stat-item {
     background: rgba(255, 255, 255, 0.95);
-    padding: 40px;
+    padding: 55px 45px;
     border-radius: 24px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(27, 58, 125, 0.15);
@@ -722,15 +723,15 @@ body {
 
 .stat-numero {
     display: block;
-    font-size: 72px;
+    font-size: 90px;
     font-weight: 900;
     color: var(--azul-oscuro);
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 .stat-label {
     display: block;
-    font-size: 24px;
+    font-size: 30px;
     color: var(--gris-texto);
     font-weight: 600;
 }
@@ -738,15 +739,15 @@ body {
 .caracteristicas-lista {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 28px;
 }
 
 .caracteristica {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 30px;
     background: rgba(255, 255, 255, 0.95);
-    padding: 20px 30px;
+    padding: 28px 35px;
     border-radius: 20px;
     box-shadow: 0 4px 16px rgba(27, 58, 125, 0.1);
     transition: all 0.3s ease;
@@ -758,11 +759,11 @@ body {
 }
 
 .check {
-    font-size: 40px;
+    font-size: 50px;
     color: var(--azul-oscuro);
     background: var(--amarillo-acento);
-    width: 56px;
-    height: 56px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -772,7 +773,7 @@ body {
 }
 
 .caracteristica p {
-    font-size: 24px;
+    font-size: 30px;
     color: var(--gris-texto);
     margin: 0;
     font-weight: 600;
@@ -781,22 +782,22 @@ body {
 .cta-final {
     text-align: center;
     margin-top: auto;
-    padding: 40px;
+    padding: 55px 45px;
     background: linear-gradient(135deg, var(--azul-oscuro), var(--azul-medio));
     border-radius: 30px;
     color: white;
 }
 
 .cta-final h2 {
-    font-size: 44px;
+    font-size: 56px;
     font-weight: 700;
-    line-height: 1.3;
+    line-height: 1.4;
 }
 
 .brillante-text {
     color: var(--amarillo-acento);
     font-weight: 900;
-    font-size: 52px;
+    font-size: 66px;
     text-shadow: 0 0 40px rgba(244, 209, 96, 0.5);
 }
 
