@@ -782,7 +782,7 @@ body {
 .cta-final {
     text-align: center;
     margin-top: auto;
-    padding: 55px 45px;
+    padding: 25px;
     background: linear-gradient(135deg, var(--azul-oscuro), var(--azul-medio));
     border-radius: 30px;
     color: white;
