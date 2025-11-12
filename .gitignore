@@ -1,0 +1,8 @@
+# Node modules
+node_modules/
+
+# PDFs generados
+*.pdf
+
+# Lock files
+package-lock.json

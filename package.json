@@ -1,0 +1,24 @@
+{
+  "name": "triptico",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andresedgar/triptico-tesla.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/andresedgar/triptico-tesla/issues"
+  },
+  "homepage": "https://github.com/andresedgar/triptico-tesla#readme",
+  "dependencies": {
+    "puppeteer": "^24.29.1"
+  }
+}
