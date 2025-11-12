@@ -24,11 +24,12 @@ body {
 
 /* CONTAINER PRINCIPAL DEL TRÍPTICO */
 .triptico-container {
-    max-width: 1400px;
+    width: 2550px;
+    height: 3300px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2px;
+    grid-template-columns: repeat(3, 850px);
+    gap: 0;
     background-color: white;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
 }
@@ -36,7 +37,8 @@ body {
 /* PANELES */
 .panel {
     background-color: white;
-    min-height: 800px;
+    width: 850px;
+    height: 3300px;
     overflow: hidden;
     page-break-inside: avoid;
 }
@@ -822,15 +824,19 @@ body {
     body {
         background-color: white;
         padding: 0;
+        margin: 0;
     }
 
     .triptico-container {
-        max-width: 100%;
+        width: 2550px;
+        height: 3300px;
         box-shadow: none;
         gap: 0;
     }
 
     .panel {
+        width: 850px;
+        height: 3300px;
         page-break-inside: avoid;
     }
 
@@ -845,7 +851,7 @@ body {
     }
 
     @page {
-        size: letter landscape;
+        size: 2550px 3300px;
         margin: 0;
     }
 
@@ -871,6 +877,8 @@ body {
     body.print-back .panel-back-center,
     body.print-back .panel-back-right {
         display: block;
+        width: 850px;
+        height: 3300px;
     }
 }
 
