@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=2550, initial-scale=1.0">
+    <title>Ingeniería TESLA - Frente Tríptico</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 2550px;
+            height: 3300px;
+            overflow: hidden;
+        }
+        .triptico-container {
+            width: 2550px;
+            height: 3300px;
+            display: grid;
+            grid-template-columns: repeat(3, 850px);
+            gap: 0;
+            margin: 0;
+        }
+        .panel {
+            width: 850px;
+            height: 3300px;
+        }
+        /* Ocultar paneles del reverso */
+        .panel-back-left,
+        .panel-back-center,
+        .panel-back-right {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="triptico-container">
+        <!-- PANEL IZQUIERDO (Interior izquierdo cuando se abre) -->
+        <div class="panel panel-left">
+            <div class="panel-content">
+                <h2 class="titulo-seccion">BENEFICIOS</h2>
+
+                <div class="imagen-destacada">
+                    <img src="img/paneles-urbano.jpeg" alt="Instalación Paneles Solares" class="foto-proyecto">
+                    <div class="overlay-imagen">
+                        <p class="texto-overlay">Instalaciones Profesionales</p>
+                    </div>
+                </div>
+
+                <div class="beneficios-grid">
+                    <div class="beneficio-compact">
+                        <span class="icono">💰</span>
+                        <h3>Ahorra hasta 98%</h3>
+                        <p>En tu factura eléctrica</p>
+                    </div>
+
+                    <div class="beneficio-compact">
+                        <span class="icono">⚡</span>
+                        <h3>Vida útil 25 años</h3>
+                        <p>Paneles garantizados</p>
+                    </div>
+
+                    <div class="beneficio-compact">
+                        <span class="icono">✓</span>
+                        <h3>Garantía Total</h3>
+                        <p>Equipos certificados</p>
+                    </div>
+
+                    <div class="beneficio-compact">
+                        <span class="icono">📊</span>
+                        <h3>Monitoreo 24/7</h3>
+                        <p>Control en tiempo real</p>
+                    </div>
+
+                    <div class="beneficio-compact">
+                        <span class="icono">🏠</span>
+                        <h3>Valor agregado</h3>
+                        <p>Aumenta plusvalía</p>
+                    </div>
+
+                    <div class="beneficio-compact">
+                        <span class="icono">📋</span>
+                        <h3>Sin trámites</h3>
+                        <p>Gestionamos CFE</p>
+                    </div>
+                </div>
+
+                <div class="deduccion-box">
+                    <strong>💼 Ahorro Fiscal de ISR</strong>
+                    <p>Para empresas</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PANEL CENTRAL (Portada) -->
+        <div class="panel panel-center">
+            <div class="background-overlay"></div>
+            <div class="panel-content portada">
+                <div class="logo-container">
+                    <img src="logo.jpg" alt="Ingeniería TESLA Logo" class="logo">
+                </div>
+
+                <div class="titulo-principal">
+                    <h1>Con <span class="highlight-energia">energía solar</span></h1>
+                    <h1 class="tu-futuro">tu futuro es</h1>
+                    <h1 class="brillante">brillante</h1>
+                </div>
+
+                <div class="slogan">
+                    <p>"Seguridad eléctrica, garantía de confianza"</p>
+                </div>
+
+                <div class="experiencia-badge">
+                    <div class="badge-content">
+                        <span class="badge-numero">13</span>
+                        <span class="badge-texto">AÑOS DE<br>EXPERIENCIA</span>
+                    </div>
+                </div>
+
+                <div class="certificaciones-conocer">
+                    <p class="cert-titulo">Certificados CONOCER</p>
+                    <p class="cert-numeros">EC0586.01 • EC1181</p>
+                    <p class="cert-descripcion">Instalación y Supervisión de Sistemas Fotovoltaicos</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- PANEL DERECHO (Interior derecho cuando se abre) -->
+        <div class="panel panel-right">
+            <div class="panel-content">
+                <h2 class="titulo-seccion-como">¿CÓMO FUNCIONA?</h2>
+
+                <div class="pasos-visuales">
+                    <div class="paso-visual">
+                        <div class="paso-numero">1</div>
+                        <h3>Captación Solar</h3>
+                        <p>Los paneles absorben luz solar y generan corriente directa.</p>
+                    </div>
+
+                    <div class="paso-visual">
+                        <div class="paso-numero">2</div>
+                        <h3>Transformación</h3>
+                        <p>El inversor convierte a corriente alterna para tu hogar.</p>
+                    </div>
+
+                    <div class="paso-visual">
+                        <div class="paso-numero">3</div>
+                        <h3>Distribución</h3>
+                        <p>La energía abastece toda tu instalación.</p>
+                    </div>
+
+                    <div class="paso-visual">
+                        <div class="paso-numero">4</div>
+                        <h3>Medición</h3>
+                        <p>El medidor registra excedentes y optimiza uso.</p>
+                    </div>
+                </div>
+
+                <div class="imagen-destacada-right">
+                    <img src="img/tecnico-tesla.jpeg" alt="Equipo TESLA" class="foto-proyecto">
+                    <div class="overlay-imagen">
+                        <p class="texto-overlay">Equipo Certificado TESLA</p>
+                    </div>
+                </div>
+
+                <div class="info-rapida">
+                    <p><strong>💡 Energía renovable</strong> eficiente y sostenible</p>
+                    <p><strong>🌍 Reduce tu huella</strong> de carbono</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
