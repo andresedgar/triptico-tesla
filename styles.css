@@ -128,7 +128,7 @@ body {
 
 .beneficio-compact {
     background: rgba(255, 255, 255, 0.95);
-    padding: 35px 28px;
+    padding: 40px 32px;
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 6px 20px rgba(27, 58, 125, 0.1);
@@ -142,20 +142,20 @@ body {
 }
 
 .beneficio-compact .icono {
-    font-size: 70px;
+    font-size: 80px;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
 }
 
 .beneficio-compact h3 {
-    font-size: 32px;
+    font-size: 38px;
     font-weight: 700;
     color: var(--azul-oscuro);
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 .beneficio-compact p {
-    font-size: 26px;
+    font-size: 30px;
     color: var(--gris-texto);
     line-height: 1.4;
 }
@@ -415,7 +415,7 @@ body {
 
 .paso-visual {
     background: rgba(255, 255, 255, 0.95);
-    padding: 40px 30px;
+    padding: 45px 35px;
     border-radius: 20px;
     text-align: center;
     box-shadow: 0 6px 20px rgba(27, 58, 125, 0.1);
@@ -429,29 +429,29 @@ body {
 }
 
 .paso-numero {
-    width: 90px;
-    height: 90px;
+    width: 100px;
+    height: 100px;
     background: linear-gradient(135deg, var(--azul-oscuro), var(--azul-medio));
     color: white;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 48px;
+    font-size: 56px;
     font-weight: 800;
-    margin: 0 auto 25px;
+    margin: 0 auto 28px;
     box-shadow: 0 6px 20px rgba(27, 58, 125, 0.3);
 }
 
 .paso-visual h3 {
-    font-size: 34px;
+    font-size: 40px;
     font-weight: 700;
     color: var(--azul-oscuro);
-    margin-bottom: 16px;
+    margin-bottom: 18px;
 }
 
 .paso-visual p {
-    font-size: 26px;
+    font-size: 30px;
     color: var(--gris-texto);
     line-height: 1.4;
 }
@@ -490,10 +490,10 @@ body {
 
 .servicio-item {
     display: flex;
-    gap: 30px;
+    gap: 32px;
     align-items: center;
     background: rgba(255, 255, 255, 0.95);
-    padding: 35px 30px;
+    padding: 40px 35px;
     border-radius: 20px;
     box-shadow: 0 6px 20px rgba(27, 58, 125, 0.1);
     border: 2px solid rgba(107, 164, 209, 0.3);
@@ -506,19 +506,19 @@ body {
 }
 
 .icono-servicio {
-    font-size: 80px;
+    font-size: 90px;
     flex-shrink: 0;
 }
 
 .servicio-item h3 {
-    font-size: 34px;
+    font-size: 40px;
     font-weight: 700;
     color: var(--azul-oscuro);
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 .servicio-item p {
-    font-size: 26px;
+    font-size: 30px;
     color: var(--gris-texto);
     line-height: 1.4;
     margin: 0;
@@ -708,7 +708,7 @@ body {
 
 .stat-item {
     background: rgba(255, 255, 255, 0.95);
-    padding: 55px 45px;
+    padding: 60px 50px;
     border-radius: 24px;
     text-align: center;
     box-shadow: 0 10px 30px rgba(27, 58, 125, 0.15);
@@ -723,15 +723,15 @@ body {
 
 .stat-numero {
     display: block;
-    font-size: 90px;
+    font-size: 100px;
     font-weight: 900;
     color: var(--azul-oscuro);
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 .stat-label {
     display: block;
-    font-size: 30px;
+    font-size: 34px;
     color: var(--gris-texto);
     font-weight: 600;
 }
@@ -745,9 +745,9 @@ body {
 .caracteristica {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 34px;
     background: rgba(255, 255, 255, 0.95);
-    padding: 28px 35px;
+    padding: 32px 38px;
     border-radius: 20px;
     box-shadow: 0 4px 16px rgba(27, 58, 125, 0.1);
     transition: all 0.3s ease;
@@ -759,11 +759,11 @@ body {
 }
 
 .check {
-    font-size: 50px;
+    font-size: 56px;
     color: var(--azul-oscuro);
     background: var(--amarillo-acento);
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -773,7 +773,7 @@ body {
 }
 
 .caracteristica p {
-    font-size: 30px;
+    font-size: 34px;
     color: var(--gris-texto);
     margin: 0;
     font-weight: 600;
@@ -802,26 +802,6 @@ body {
 }
 
 /* ============================================
-   INSTRUCCIONES DE IMPRESIÓN
-   ============================================ */
-.instrucciones-impresion {
-    max-width: 1400px;
-    margin: 20px auto;
-    padding: 15px;
-    background: #fff3cd;
-    border: 2px solid #ffc107;
-    border-radius: 10px;
-    text-align: center;
-    color: #856404;
-}
-
-.instrucciones-impresion p {
-    margin: 0;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-/* ============================================
    MEDIA QUERIES PARA IMPRESIÓN
    ============================================ */
 @media print {
@@ -842,10 +822,6 @@ body {
         width: 1100px;
         height: 2550px;
         page-break-inside: avoid;
-    }
-
-    .instrucciones-impresion {
-        display: none;
     }
 
     .panel-back-left,
